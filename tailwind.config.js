@@ -1,14 +1,23 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       backgroundColor: {
+        'pYellow': '#f9fbf3',
+        'pBrown': '#444041',
+        'pOrange': '#f2d0b7',
+        'pWhite': '#FFFFFF',
+      },
+      textColor: {
+        'pYellow': '#f9fbf3',
+        'pBrown': '#444041',
+        'pOrange': '#f2d0b7',
+        'pWhite': '#FFFFFF',
+      },
+      borderColor: {
         'pYellow': '#f9fbf3',
         'pBrown': '#444041',
         'pOrange': '#f2d0b7',
@@ -38,4 +47,4 @@ const config: Config = {
   },
   plugins: [],
 }
-export default config
+
